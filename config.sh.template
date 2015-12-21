@@ -1,0 +1,16 @@
+export BOT_NAME="jarvis"
+export LOGGER_LEVEL="INFO"
+export AWS_REGION=""
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export DISCORD_BOT_EMAIL=""
+export DISCORD_BOT_PASSWORD=""
+
+export AWS_SE_INSTANCE_ID=""
+# Server should shut down after 4 hours
+export AWS_SERVER_EXPIRATION_SECONDS="14400"
+# 2X & X Seconds before the AWS_SERVER_EXPIRATION_SECONDS to notify users. 
+# There will be two notifications before shutdown.
+# In this case notify the user 10 minutes and 5 minutes before the server 
+# is shutdown.
+export AWS_SERVER_EXPIRATION_SECONDS_NOTIF="300"
