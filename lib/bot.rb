@@ -4,7 +4,7 @@ require 'aws-sdk'
 bot = Discordrb::Bot.new ENV['DISCORD_BOT_EMAIL'], ENV['DISCORD_BOT_PASSWORD']
 se_mod = "#{ENV['BOT_NAME']} (se|space-engineers|space engineers)"
 
-@logger = Logger.new(File.dirname(File.dirname(__FILE__)) + '/log/bot.log', 10, 1049000000)
+@logger = Logger.new(STDOUT)
 @logger.level = "Logger::#{ENV['LOGGER_LEVEL']}".constantize
 @inst_id = ENV['AWS_SE_INSTANCE_ID']
 @ec2 = Aws::EC2::Client.new({
